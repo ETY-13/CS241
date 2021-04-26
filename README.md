@@ -7,7 +7,7 @@ My goal is to create a toy car that can move by itself, avoiding obstacles and p
 The approach that I take to solve the problem is to make a car out of cardboard cutouts. I use three wheels to drive the car; the front wheel is a cartwheel that can rotate 360 degrees, while the back wheels are two bigger wheels that are attached to TT motors. The motors are controlled by an L293D motor controller. A servo is used to rotate the ultrasonic sensor to look left (0 degrees), forward (95 degrees), or to the right (180 degrees), which is sitting at the front of the car. Everything runs on an Arduino Uno and is powered by a 9 volts battery. The pictures below show what the car looks like from the top, front, and bottom.
 
 <br>
-<div style="max-width: 100%;max-height: 100%;display: inline-block;">
+<div style="max-width: 100%;max-height: 100%;display: inline-block; justify-content: center">
 <img src="https://github.com/ETY-13/CS241/blob/main/car_images/top.jpg" width="210" height="190" />
 <img src="https://github.com/ETY-13/CS241/blob/main/car_images/front.jpg" width="190" height="220" />
 <img src="https://github.com/ETY-13/CS241/blob/main/car_images/bottom.jpg" width="210" height="190" />
