@@ -8,9 +8,9 @@ The approach that I take to solve the problem is to make a car out of cardboard 
 
 <br>
 <div style="max-width: 100%;max-height: 100%;display: inline-block;">
-<img src="https://github.com/ETY-13/CS241/blob/main/car_images/top.jpg" width="350" height="300" />
-<img src="https://github.com/ETY-13/CS241/blob/main/car_images/front.jpg" width="300" height="350" />
-<img src="https://github.com/ETY-13/CS241/blob/main/car_images/bottom.jpg" width="350" height="300" />
+<img src="https://github.com/ETY-13/CS241/blob/main/car_images/top.jpg" width="210" height="190" />
+<img src="https://github.com/ETY-13/CS241/blob/main/car_images/front.jpg" width="190" height="220" />
+<img src="https://github.com/ETY-13/CS241/blob/main/car_images/bottom.jpg" width="210" height="190" />
 </div>
 <br>
 
