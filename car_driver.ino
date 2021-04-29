@@ -9,8 +9,8 @@ const int motor_right_2 = 5;
 const int motor_source_1 = 8;
 const int motor_source_2 = 9;
 
-const int ultra_trig = 12;
 const int ultra_echo = 11;
+const int ultra_trig = 12;
 const int ultra_source = 13;
 
 const int servo_pin = 7;
@@ -26,17 +26,20 @@ void setup(){
   // motor source
   pinMode(motor_source_1,OUTPUT);
   pinMode(motor_source_2,OUTPUT);
+  analogWrite(motor_source_1,255); 
+  analogWrite(motor_source_2,255);
   
   // ultra_sonic
   pinMode(ultra_trig, OUTPUT);
   pinMode(ultra_echo, INPUT);
+  pinMode(ultra_source, OUTPUT);
+  analogWrite(ultra_source,255);
 
   // servo
   servo.write(95);
   servo.attach(servo_pin);
-  analogWrite(ultra_source,255);
-  Serial.begin(9600);
   
+  Serial.begin(9600);
 }
 
 // See if there's obstacle close by
@@ -101,7 +104,7 @@ void drive(char dir){
   }
 }
 
-// get a random direction to turn to:
+// get a random direction to turn:
 // either left or right
 char get_random_dir(){
   int num = random(0,2);
@@ -115,10 +118,6 @@ int moved_forward = 0;
 int saved_start_distance = 0;
 void loop(){
  
-  // Sources for motor controller
-  analogWrite(motor_source_1,255); 
-  analogWrite(motor_source_2,255);
-
   auto start_distance = look_around('f');
   
   if(start_distance > 300){
@@ -168,4 +167,3 @@ void loop(){
     moved_forward = 0;
  }
 }
-
